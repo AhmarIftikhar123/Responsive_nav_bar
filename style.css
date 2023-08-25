@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+body {
+  background-color: darkgray;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.3rem;
+  background-color: gray;
+}
+.logo img {
+  width: 5rem;
+  filter: invert(10%);
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 40%;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+li a:hover {
+  color: lightgray;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+.btn {
+  font-weight: 700;
+  padding: 0.5rem 1.6rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #fff;
+}
+li {
+  list-style: none;
+}
+.manu {
+  display: none;
+}
+.manu li img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .manu {
+    display: flex;
+  }
+  ul {
+    display: none;
+  }
+  ul li a{
+    color: black;
+  }
+  .show_nav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    gap: 5rem;
+}
+}
